@@ -34,7 +34,7 @@ class Manger {
             setTimeout(async () => {
                 socket.disconnect();
                 if (dataCounter > 0 ) {
-                    // lhtLog("Web Socket Monitoring", `Web Socket url ${Config.WS_URL} working`, {}, "kajalB", "XDC_SOCKET_MONITORING")
+                    lhtLog("Web Socket Monitoring", `Web Socket url ${Config.WS_URL} working`, {}, "kajalB", "INFO")
                     resolve(`${Config.WS_URL} Web Socket Working`);
                 }
                 else{    
