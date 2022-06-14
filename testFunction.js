@@ -9,7 +9,7 @@ const requestData = {
 }
 
 async function testMethod() {
-    const [error, response] = await UtilMethods.parseResponse(new BLManager().cloudFunction(requestData));
+    const [error, response] = await UtilMethods.parseResponse(new BLManager().webSocketMonitor(requestData));
     lhtLog('testMethod', 'Success', response);
     lhtLog('testMethod', 'Error', error);
 }
